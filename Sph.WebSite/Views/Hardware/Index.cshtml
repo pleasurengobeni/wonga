@@ -1,0 +1,13 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@model IList<Sph.WebSite.Entities.StockItem>
+
+@foreach (var s in Model)
+{
+    <p> @s.Description </p>
+    <br/>
+}
+
